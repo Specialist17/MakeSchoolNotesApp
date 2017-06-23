@@ -17,6 +17,8 @@
 		2E4A07B11C42F599007F415F /* ListNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */; };
 		848490D31D68F5610043C60B /* MakeSchoolNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 848490D11D68F5610043C60B /* MakeSchoolNotes.xcdatamodeld */; };
 		9079CE581EFC42D0001A9D57 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9079CE571EFC42D0001A9D57 /* CoreDataHelper.swift */; };
+		9079CE5A1EFC4ACE001A9D57 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9079CE591EFC4ACE001A9D57 /* MaterialView.swift */; };
+		9079CE5C1EFC68F0001A9D57 /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9079CE5B1EFC68F0001A9D57 /* TextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +47,8 @@
 		2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewCell.swift; sourceTree = "<group>"; };
 		848490D21D68F5610043C60B /* MakeSchoolNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MakeSchoolNotes.xcdatamodel; sourceTree = "<group>"; };
 		9079CE571EFC42D0001A9D57 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		9079CE591EFC4ACE001A9D57 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		9079CE5B1EFC68F0001A9D57 /* TextFieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */,
+				9079CE591EFC4ACE001A9D57 /* MaterialView.swift */,
+				9079CE5B1EFC68F0001A9D57 /* TextFieldStyle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,6 +219,8 @@
 				2E4A07941C42F3B0007F415F /* AppDelegate.swift in Sources */,
 				2E4A07A91C42F40B007F415F /* ListNotesTableViewController.swift in Sources */,
 				848490D31D68F5610043C60B /* MakeSchoolNotes.xcdatamodeld in Sources */,
+				9079CE5C1EFC68F0001A9D57 /* TextFieldStyle.swift in Sources */,
+				9079CE5A1EFC4ACE001A9D57 /* MaterialView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

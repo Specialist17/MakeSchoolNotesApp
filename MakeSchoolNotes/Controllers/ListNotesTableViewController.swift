@@ -17,7 +17,6 @@ class ListNotesTableViewController: UITableViewController {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,17 +30,18 @@ class ListNotesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listNotesTableViewCell", for: indexPath) as! ListNotesTableViewCell
         
-        let note = notes[indexPath.row]
+        let note = notes[(notes.count - 1) - indexPath.row]
         
         cell.noteTitleLabel?.text = note.title
         cell.noteModificationTimeLabel.text = note.modificationTime?.convertToString()
+        cell.notePreviewLabel?.text = note.content
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            CoreDataHelper.deleteNote(note: notes[indexPath.row])
+            CoreDataHelper.deleteNote(note: notes[(notes.count - 1) - indexPath.row])
             notes = CoreDataHelper.retrieveAllNotes()
         }
     }
@@ -51,7 +51,7 @@ class ListNotesTableViewController: UITableViewController {
             if identifier == "displayNote" {
                 print("Transitioning to the display Note View Controller")
                 let indexPath = tableView.indexPathForSelectedRow!
-                let note = notes[indexPath.row]
+                let note = notes[(notes.count - 1) - indexPath.row]
                 let displayNoteViewController = segue.destination as! DisplayNoteViewController
                 
                 displayNoteViewController.note = note
